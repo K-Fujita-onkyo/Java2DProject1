@@ -52,12 +52,18 @@ public class Project1Main{
             linePic.setSize(screenSize[0], screenSize[1]);
             linePic.setVisible(true);
 
-
         }else if(selectNum == 2){
 
+            FilledContourField filledPic = new FilledContourField(screenSize, vtk);
+            filledPic.setTitle("Filled Contour Field");
+            filledPic.setSize(screenSize[0], screenSize[1]);
+            filledPic.setVisible(true);
+
         }else{
+
             System.out.println("The system couldn't draw the picture because you selected another number...The system is stopped!");
 		    System.exit(1);
+            
         }
 
         //scanners are closed.

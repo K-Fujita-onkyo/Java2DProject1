@@ -214,20 +214,14 @@ public class RoadVTKFile {
 
         double times;
 
+		if(maxDistance<0) maxDistance = (-1) * maxDistance;
+
         if(sizeX < sizeY) times = sizeX/(maxDistance*2.5);
         else times = sizeY/(maxDistance*2.5);
 
         for(int i = 0; i < numberOfPoints; i++){
             pointLocations[i][0] = times * pointLocations[i][0] + sizeX/2;
-            pointLocations[i][1] = times * pointLocations[i][1] + sizeX/2;
-        }
-    }
-
-	void transformPoints(int sizeX, int sizeY, int times){
-
-        for(int i = 0; i < numberOfPoints; i++){
-            pointLocations[i][0] = times * pointLocations[i][0] + sizeX/2;
-            pointLocations[i][1] = times * pointLocations[i][1] + sizeX/2;
+            pointLocations[i][1] = -times * pointLocations[i][1] + sizeY/2;
         }
     }
 
