@@ -30,7 +30,7 @@ public class Project1Main{
 
         vtk.transformPoints(screenSize[0], screenSize[1]);
 
-        System.out.println("Which do you draw contour 1: lines or 2: plots? Please select 1 or 2!");
+        System.out.println("Which do you draw contour 1: lines, 2: plots, or 3: Lattice? Please select 1, 2, or 3!");
         scanDrawing = new Scanner(System.in);
         int selectNum = Integer.parseInt(scanDrawing.next());
 
@@ -59,7 +59,14 @@ public class Project1Main{
             filledPic.setSize(screenSize[0], screenSize[1]);
             filledPic.setVisible(true);
 
-        }else{
+        }else if(selectNum == 3){
+
+            LatticeGradient latticePic = new LatticeGradient(vtk);
+            latticePic.setTitle("Lattice Gradient");
+            latticePic.setSize(screenSize[0], screenSize[1]);
+            latticePic.setVisible(true);
+
+        } else{
 
             System.out.println("The system couldn't draw the picture because you selected another number...The system is stopped!");
 		    System.exit(1);
