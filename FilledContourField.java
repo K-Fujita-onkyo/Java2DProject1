@@ -5,11 +5,11 @@ import java.awt.image.*;
 public class FilledContourField extends JFrame{
 
     int[] screenSize = new int[2];
-    RoadVTKFile vtk;
+    LoadVTKFile vtk;
     BufferedImage image;
     BarycentricGradient onePolygon;
 
-    FilledContourField(int screenSize[], RoadVTKFile vtk){
+    FilledContourField(int screenSize[], LoadVTKFile vtk){
         this.screenSize = screenSize;
         this.vtk = vtk;
     }

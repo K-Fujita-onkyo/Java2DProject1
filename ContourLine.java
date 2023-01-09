@@ -4,9 +4,9 @@ import javax.swing.*;
 
 public class ContourLine extends JFrame{
 
-    RoadVTKFile vtk;
+    LoadVTKFile vtk;
 
-    ContourLine(RoadVTKFile vtk){
+    ContourLine(LoadVTKFile vtk){
         this.vtk = vtk;
     }
 

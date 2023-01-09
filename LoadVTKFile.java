@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class RoadVTKFile {
+public class LoadVTKFile {
 
 	private String filename;
 	private String[] contents;
@@ -21,7 +21,7 @@ public class RoadVTKFile {
 
 	public static final double INF = 9999999;
 
-	RoadVTKFile(String filename){
+	LoadVTKFile(String filename){
 		this.filename = filename;
 	}
 

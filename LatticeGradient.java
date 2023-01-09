@@ -3,9 +3,9 @@ import javax.swing.*;
 
 public class LatticeGradient extends JFrame{
 
-    RoadVTKFile vtk;
+    LoadVTKFile vtk;
 
-    LatticeGradient(RoadVTKFile vtk){
+    LatticeGradient(LoadVTKFile vtk){
         this.vtk = vtk;
     }
 

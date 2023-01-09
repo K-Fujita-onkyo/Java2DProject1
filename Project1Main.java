@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Project1Main{
 
-    static RoadVTKFile vtk;
+    static LoadVTKFile vtk;
     static int[] screenSize = new int[2];
     public static void main(String[] args) {
 
@@ -18,7 +18,7 @@ public class Project1Main{
         filename = scanVTK.next();
 
         //VTK File is set up.
-		vtk = new RoadVTKFile(filename);
+		vtk = new LoadVTKFile(filename);
 		vtk.setUp();
 
         System.out.println("Please enter the screen size you want! (For example: \"500 500\")");
